@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B99C9FD3-C9F2-462F-9A82-56860ABB5706}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TDService</RootNamespace>
+    <AssemblyName>TDService</AssemblyName>
+    <ApplicationIcon>tk.ICO</ApplicationIcon>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BaseData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.SpeechLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Server\Client\bin\Debug\Interop.SpeechLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\CoalTraffic0926\CoalTraffic\bin\Debug\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="SoundPakage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZGHT.DataAccess, Version=1.0.2776.33840, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmLog.Designer.cs">
+      <DependentUpon>AlarmLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmSelect.Designer.cs">
+      <DependentUpon>AlarmSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmText.Designer.cs">
+      <DependentUpon>AlarmText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BangLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BangLog.Designer.cs">
+      <DependentUpon>BangLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\INIClass.cs" />
+    <Compile Include="Code\SocketCH.cs" />
+    <Compile Include="Code\SqlHelper.cs" />
+    <Compile Include="Code\StaticForm.cs" />
+    <Compile Include="DataBaseGTInitial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBaseGTInitial.Designer.cs">
+      <DependentUpon>DataBaseGTInitial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseInitial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBaseInitial.Designer.cs">
+      <DependentUpon>DataBaseInitial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmptyBangSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmptyBangSel.designer.cs">
+      <DependentUpon>EmptyBangSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_GTWeightBangSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_GTWeightBangSearch.Designer.cs">
+      <DependentUpon>FM_GTWeightBangSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_WeightBangSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_WeightBangSearch.designer.cs">
+      <DependentUpon>FM_WeightBangSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlinleStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlinleStat.Designer.cs">
+      <DependentUpon>OnlinleStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PingIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PingIP.Designer.cs">
+      <DependentUpon>PingIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PingServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PingServer.Designer.cs">
+      <DependentUpon>PingServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AlarmLog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlarmLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlarmSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlarmSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlarmText.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlarmText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BangLog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BangLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBaseGTInitial.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DataBaseGTInitial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBaseInitial.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DataBaseInitial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmptyBangSel.resx">
+      <DependentUpon>EmptyBangSel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_GTWeightBangSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FM_GTWeightBangSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_WeightBangSearch.resx">
+      <DependentUpon>FM_WeightBangSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlinleStat.resx">
+      <DependentUpon>OnlinleStat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PingIP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PingIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PingServer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PingServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetIP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SetIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SetIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetIP.Designer.cs">
+      <DependentUpon>SetIP.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Resources\skinOffice2007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Resources\BangPic_05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Resources\BangPic_07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Resources\BangPic_17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Resources\BangPic_19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Resources\BangPic_21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Resources\BangPic_23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Resources\BangPic_25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Resources\BangPic_27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Resources\BangPic_29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Resources\Off.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Resources\On.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Resources\skinDefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Resources\skinMsn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tk.ICO" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
